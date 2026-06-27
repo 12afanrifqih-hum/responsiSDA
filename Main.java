@@ -85,7 +85,7 @@ public class Main {
     static void playSong() {
         Song s = queue.dequeue();
         if (s != null) {
-            System.out.println("Playing: " + s.getTitle());
+            System.out.println("Now playing " + s.getTitle());
         }
     }
 
