@@ -22,6 +22,10 @@ public class Queue {
         return removedSong;
     }
 
+    public void addFirst(Song song) {
+        queue.addFirst(song);
+    }
+
     public Song peek() {
         if (isEmpty()) {
             System.out.println("Your queue is empty");

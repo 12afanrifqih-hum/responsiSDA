@@ -36,7 +36,7 @@ public class Main {
                     history.showHistory();
                     break;
                 case 7:
-                    history.undoLastSong();
+                    previousSong();
                     break;
                 case 8:
                     System.out.println("Exiting...");
@@ -55,7 +55,7 @@ public class Main {
         System.out.println("4. View Queue");
         System.out.println("5. Play Song");
         System.out.println("6. View History");
-        System.out.println("7. Undo History");
+        System.out.println("7. Previous Song");
         System.out.println("8. Exit");
         System.out.println("=====================");
     }
@@ -67,10 +67,7 @@ public class Main {
         List<Song> results = search.searchSongs(catalog.getAllSongs(), key);
         search.displayResult(results);
         
-        for (Song s : results) {
-            history.addHistory(s);
-        }
-    }
+            }
 
     static void addQueue() {
         int id = readInt("Enter song ID: ");
@@ -86,6 +83,16 @@ public class Main {
         Song s = queue.dequeue();
         if (s != null) {
             System.out.println("Now playing " + s.getTitle());
+            history.addHistory(s);
+        }
+    }
+
+
+    static void previousSong() {
+        Song prev = history.getPreviousSong();
+        if (prev != null) {
+            queue.addFirst(prev);
+            System.out.println("'" + prev.getTitle() + "' returned to the front of the queue.");
         }
     }
 

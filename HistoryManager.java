@@ -23,14 +23,13 @@ public class HistoryManager {
         }
     }
 
-    public void undoLastSong() {
+    public Song getPreviousSong() {
 
         if (history.isEmpty()) {
-            System.out.println("History is empty.");
-            return;
+            System.out.println("No previous song.");
+            return null;
         }
 
-        Song removed = history.pop();
-        System.out.println("Undo successful: " + removed.getTitle());
+        return history.pop();
     }
 }

@@ -14,8 +14,16 @@ public class Song {
         this.genre = genre;
     }
 
+    public Song(String title, String artist, String album, String genre) {
+        this(0, title, artist, album, genre);
+    }
+
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -36,7 +44,6 @@ public class Song {
 
     @Override
     public String toString() {
-        return id + " | " + title + " - " + artist
-                + " | " + album + " | " + genre;
+        return id + " | " + title + " - " + artist + " | " + album + " | " + genre;
     }
 }
