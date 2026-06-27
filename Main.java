@@ -82,7 +82,7 @@ public class Main {
     static void playSong() {
         Song s = queue.dequeue();
         if (s != null) {
-            System.out.println("Now playing " + s.getTitle());
+            System.out.println("Now playing " + s.getTitle() + " by " + s.getArtist());
             history.addHistory(s);
         }
     }
