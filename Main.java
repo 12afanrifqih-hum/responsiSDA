@@ -14,7 +14,7 @@ public class Main {
         
         while (true) {
             showMenu();
-            int choice = readInt("Pilih menu: ");
+            int choice = readInt("Choose menu: ");
             
             switch (choice) {
                 case 1:
@@ -39,10 +39,10 @@ public class Main {
                     history.undoLastSong();
                     break;
                 case 8:
-                    System.out.println("Keluar...");
+                    System.out.println("Exiting...");
                     return;
                 default:
-                    System.out.println("Menu tidak valid!");
+                    System.out.println("Invalid menu!");
             }
         }
     }
@@ -73,19 +73,19 @@ public class Main {
     }
 
     static void addQueue() {
-        int id = readInt("Masukkan ID lagu: ");
+        int id = readInt("Enter song ID: ");
         Song s = catalog.findSongById(id);
         if (s != null) {
             queue.enqueue(s);
         } else {
-            System.out.println("Lagu tidak ditemukan!");
+            System.out.println("Song not found!");
         }
     }
 
     static void playSong() {
         Song s = queue.dequeue();
         if (s != null) {
-            System.out.println("Memutar: " + s.getTitle());
+            System.out.println("Playing: " + s.getTitle());
         }
     }
 
@@ -95,7 +95,7 @@ public class Main {
                 System.out.print(msg);
                 return Integer.parseInt(scanner.nextLine());
             } catch (Exception e) {
-                System.out.println("Input tidak valid! Masukkan angka.");
+                System.out.println("Invalid input! Enter a number.");
             }
         }
     }

@@ -23,7 +23,7 @@ public class CatalogManager {
     public void displayCatalog() {
         System.out.println("\n===== MUSIC CATALOG =====");
         if (catalog.isEmpty()) {
-            System.out.println("Katalog kosong.");
+            System.out.println("Catalog is empty.");
             return;
         }
         for (Song s : catalog.values()) {
@@ -41,7 +41,7 @@ public class CatalogManager {
         try {
             pilih = Integer.parseInt(scanner.nextLine());
         } catch (NumberFormatException e) {
-            System.out.println("Input tidak valid! Silakan masukkan angka.");
+            System.out.println("Invalid input! Please enter a number.");
             return; 
         }
 
@@ -53,12 +53,12 @@ public class CatalogManager {
             try {
                 id = Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("[!] Gagal: ID harus berupa angka.");
+                System.out.println("[!] Failed: ID must be a number.");
                 return;
             }
             
             if (catalog.containsKey(id)) {
-                System.out.println("[!] Gagal: ID " + id + " sudah terdaftar untuk lagu lain.");
+                System.out.println("[!] Failed: ID " + id + " is already registered to another song.");
             } else {
                 System.out.print("Title: ");
                 String title = scanner.nextLine();
@@ -70,7 +70,7 @@ public class CatalogManager {
                 String genre = scanner.nextLine();
                 
                 addSong(new Song(id, title, artist, album, genre));
-                System.out.println("Lagu berhasil ditambahkan!");
+                System.out.println("Song added successfully!");
             }
         } else if (pilih == 3) {
             System.out.print("Enter ID: ");
@@ -78,18 +78,18 @@ public class CatalogManager {
             try {
                 id = Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("[!] Gagal: ID harus berupa angka.");
+                System.out.println("[!] Failed: ID must be a number.");
                 return;
             }
             
             if (!catalog.containsKey(id)) {
-                System.out.println("[!] Gagal: ID " + id + " tidak ditemukan.");
+                System.out.println("[!] Failed: ID " + id + " not found.");
             } else {
                 removeSong(id);
-                System.out.println("Lagu berhasil dihapus.");
+                System.out.println("Song deleted successfully.");
             }
         } else {
-            System.out.println("Pilihan tidak tersedia!");
+            System.out.println("Option not available!");
         }
     }
 }

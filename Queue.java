@@ -10,22 +10,22 @@ public class Queue {
 
     public void enqueue(Song song) {
         queue.addLast(song);
-        System.out.println("'" + song.getTitle() + "' ditambahkan ke antrian");
+        System.out.println("'" + song.getTitle() + "' added to queue");
     }
 
     public Song dequeue() {
         if (isEmpty()) {
-            System.out.println("Tidak ada lagu di antrian");
+            System.out.println("No songs in queue");
             return null;
         }
         Song removedSong = queue.removeFirst();
-        System.out.println("'" + removedSong.getTitle() + "' dihapus dari antrian");
+        System.out.println("'" + removedSong.getTitle() + "' removed from queue");
         return removedSong;
     }
 
     public Song peek() {
         if (isEmpty()) {
-            System.out.println("Tidak ada lagu di antrian");
+            System.out.println("No songs in queue");
             return null;
         }
         return queue.getFirst();
@@ -41,12 +41,12 @@ public class Queue {
 
     public void clear() {
         queue.clear();
-        System.out.println("Antrian dihapus");
+        System.out.println("Queue cleared");
     }
 
     public void displayQueue() {
         if (isEmpty()) {
-            System.out.println("Tidak ada lagu di antrian");
+            System.out.println("No songs in queue");
             return;
         }
 

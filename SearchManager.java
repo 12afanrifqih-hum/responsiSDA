@@ -25,11 +25,11 @@ public class SearchManager {
     public void displayResult(List<Song> songs) {
 
         if (songs.isEmpty()) {
-            System.out.println("Lagu tidak ditemukan.");
+            System.out.println("Song not found.");
             return;
         }
 
-        System.out.println("\n===== HASIL PENCARIAN =====");
+        System.out.println("\n===== SEARCH RESULTS =====");
 
         for (Song song : songs) {
             System.out.println("ID     : " + song.getId());

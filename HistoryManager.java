@@ -11,7 +11,7 @@ public class HistoryManager {
     public void showHistory() {
 
         if (history.isEmpty()) {
-            System.out.println("History kosong.");
+            System.out.println("History is empty.");
             return;
         }
 
@@ -26,11 +26,11 @@ public class HistoryManager {
     public void undoLastSong() {
 
         if (history.isEmpty()) {
-            System.out.println("History kosong.");
+            System.out.println("History is empty.");
             return;
         }
 
         Song removed = history.pop();
-        System.out.println("Undo berhasil: " + removed.getTitle());
+        System.out.println("Undo successful: " + removed.getTitle());
     }
 }
