@@ -63,7 +63,13 @@ public class Main {
     static void searchSong() {
         System.out.print("Keyword: ");
         String key = scanner.nextLine();
-        search.displayResult(search.searchSongs(catalog.getAllSongs(), key));
+        
+        List<Song> results = search.searchSongs(catalog.getAllSongs(), key);
+        search.displayResult(results);
+        
+        for (Song s : results) {
+            history.addHistory(s);
+        }
     }
 
     static void addQueue() {
@@ -80,7 +86,6 @@ public class Main {
         Song s = queue.dequeue();
         if (s != null) {
             System.out.println("Memutar: " + s.getTitle());
-            history.addHistory(s);
         }
     }
 
