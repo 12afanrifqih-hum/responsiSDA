@@ -15,17 +15,16 @@ public class Queue {
 
     public Song dequeue() {
         if (isEmpty()) {
-            System.out.println("No songs in queue");
+            System.out.println("Your queue is empty");
             return null;
         }
         Song removedSong = queue.removeFirst();
-        System.out.println("'" + removedSong.getTitle() + "' removed from queue");
         return removedSong;
     }
 
     public Song peek() {
         if (isEmpty()) {
-            System.out.println("No songs in queue");
+            System.out.println("Your queue is empty");
             return null;
         }
         return queue.getFirst();
