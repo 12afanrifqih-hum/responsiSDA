@@ -45,7 +45,7 @@ public class Queue {
 
     public void displayQueue() {
         if (isEmpty()) {
-            System.out.println("No songs in queue");
+            System.out.println("Your queue is empty");
             return;
         }
 
