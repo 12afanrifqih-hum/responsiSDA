@@ -3,6 +3,8 @@ import java.util.List;
 
 public class SearchManager {
 
+    // Time Complexity: O(n)
+    // Memeriksa setiap lagu untuk mencari keywoard yang sesuai
     public List<Song> searchSongs(List<Song> songs, String keyword) {
 
         List<Song> result = new ArrayList<>();
@@ -22,6 +24,8 @@ public class SearchManager {
         return result;
     }
 
+    // Time Complexity: O(n)
+    // Menampilkan seluruh hasil pencarian
     public void displayResult(List<Song> songs) {
 
         if (songs.isEmpty()) {

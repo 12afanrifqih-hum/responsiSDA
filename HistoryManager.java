@@ -4,10 +4,14 @@ public class HistoryManager {
 
     private Stack<Song> history = new Stack<>();
 
+    // Time Complexity: O(1)
+    // Menambahkan lagu ke puncak Stack
     public void addHistory(Song song) {
         history.push(song);
     }
 
+    // Time Complexity: O(n)
+    // Menampilkan seluruh lagu dalam history
     public void showHistory() {
 
         if (history.isEmpty()) {
@@ -23,6 +27,8 @@ public class HistoryManager {
         }
     }
 
+    // Time Complexity: O(1)
+    // Mengambil dan menghapus lagu terakhir dari Stack
     public Song getPreviousSong() {
 
         if (history.isEmpty()) {
