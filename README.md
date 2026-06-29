@@ -10,7 +10,7 @@ Tema 2: Hierarchical Management and Linear Data Flow Systems
 | Nama | NIM |
 | --- | --- |
 | Briellyan Sekartaji | L0125006 |
-| M. Afan Rifqi Hanifa | L0135086 | 
+| M. Afan Rifqi Hanifa | L0125086 | 
 | Pandu Jatu Pradityo | L0125111 |
 
 ---
