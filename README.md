@@ -41,19 +41,19 @@ Menyimpan riwayat lagu yang telah diputar. Fitur Previous Song mengambil lagu te
 
 **Menu Utama**
 
-[main](./media/main.png)]
+![main](./media/main.png)
 
 **Katalog Hierarkis**
 
-[katalog](./media/katalog.png)]
+![katalog](./media/katalog.png)
 
 **Play Queue**
 
-[queue](./media/queue.png)
+![queue](./media/queue.png)
 
 **History**
 
-[history](./media/history.png)
+![history](./media/history.png)
 
 ---
 
