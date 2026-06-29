@@ -7,17 +7,15 @@ Tema 2: Hierarchical Management and Linear Data Flow Systems
 
 ## Anggota Kelompok
 
-| Nama | NIM |
-|------|-----|
-| [Nama Anggota 1] | [NIM] |
-| [Nama Anggota 2] | [NIM] |
-| [Nama Anggota 3] | [NIM] |
+ [Briellyan Sekartaji] [L0125006] 
+ [M. Afan Rifqi Hanifa] [L0135086] 
+ [Pandu Jatu Pradityo] [L0125111] 
 
 ---
 
 ## Deskripsi Proyek
 
-MUZYC APP adalah aplikasi manajemen musik berbasis Command Line Interface (CLI) yang mensimulasikan cara kerja platform streaming seperti Spotify. Program ini mengelola katalog lagu secara hierarkis berdasarkan Genre, Artis, dan Album, mendukung antrean putar menggunakan prinsip FIFO, serta menyimpan riwayat pemutaran yang memungkinkan pengguna kembali ke lagu sebelumnya menggunakan prinsip LIFO.
+MUZYC APP adalah aplikasi manajemen musik berbasis Command Line Interface (CLI) yang mensimulasikan cara kerja platform streaming. Program ini mengelola katalog lagu secara hierarkis berdasarkan Genre, Artis, dan Album, mendukung antrean putar menggunakan prinsip FIFO, serta menyimpan riwayat pemutaran yang memungkinkan pengguna kembali ke lagu sebelumnya menggunakan prinsip LIFO.
 
 ---
 
@@ -41,18 +39,16 @@ Menyimpan riwayat lagu yang telah diputar. Fitur Previous Song mengambil lagu te
 
 **Menu Utama**
 
-![![alt text](./media/)]
-*(tempelkan screenshot di sini)*
+[main](./media/main.png)]
 
 **Katalog Hierarkis**
 
-![![alt text](./media/katalog.png)]
-*(tempelkan screenshot di sini)*
+[katalog](./media/katalog.png)]
 
 **Play Queue dan History**
 
-![screenshot-queue-history]
-*(tempelkan screenshot di sini)*
+[queue](./media/queue.png)
+[history](./media/history.png)
 
 ---
 
