@@ -10,7 +10,7 @@ public class Main {
     static SearchManager search = new SearchManager();
 
     public static void main(String[] args) {
-        seedData();
+        seedData(); // menambahkan data lagu awal ke katalog
         
         while (true) {
             showMenu();
@@ -60,6 +60,7 @@ public class Main {
         System.out.println("=====================");
     }
 
+    // Method untuk mencari lagu berdasarkan keyword, kompleksitas O(n) 
     static void searchSong() {
         System.out.print("Keyword: ");
         String key = scanner.nextLine();
@@ -69,6 +70,7 @@ public class Main {
         
             }
 
+    // Method untuk menambahkan lagu ke queue berdasarkan ID, kompleksitas O(n) 
     static void addQueue() {
         int id = readInt("Enter song ID: ");
         Song s = catalog.findSongById(id);
@@ -79,6 +81,7 @@ public class Main {
         }
     }
 
+    // Method untuk memutar lagu dari queue
     static void playSong() {
         Song s = queue.dequeue();
         if (s != null) {
@@ -87,7 +90,7 @@ public class Main {
         }
     }
 
-
+    // Method untuk mengembalikan lagu sebelumnya
     static void previousSong() {
         Song prev = history.getPreviousSong();
         if (prev != null) {
@@ -96,6 +99,7 @@ public class Main {
         }
     }
 
+    // Method untuk membaca input integer dari user 
     static int readInt(String msg) {
         while (true) {
             try {
@@ -107,6 +111,7 @@ public class Main {
         }
     }
 
+    // Method untuk menambahkan data lagu awal ke katalog, kompleksitas O(n)
     static void seedData() {
         catalog.addSong(new Song(1, "Separuh Nafas", "Dewa 19", "Laskar Cinta", "Rock"));
         catalog.addSong(new Song(2, "Aku Milikmu", "Dewa 19", "Format Masa Depan", "Rock"));
