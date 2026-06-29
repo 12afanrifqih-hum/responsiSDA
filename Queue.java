@@ -8,11 +8,13 @@ public class Queue {
         this.queue = new LinkedList<>();
     }
 
+    // menambahkan lagu ke queue
     public void enqueue(Song song) {
         queue.addLast(song);
         System.out.println("'" + song.getTitle() + "' added to queue");
     }
 
+    // mengambil lagu dari queue terdepan 
     public Song dequeue() {
         if (isEmpty()) {
             System.out.println("Your queue is empty");
@@ -22,10 +24,12 @@ public class Queue {
         return removedSong;
     }
 
+    // menambahkan lagu di awal queue
     public void addFirst(Song song) {
         queue.addFirst(song);
     }
 
+    // melihat lagu di awal queue tanpa menghapusnya
     public Song peek() {
         if (isEmpty()) {
             System.out.println("Your queue is empty");
@@ -34,25 +38,29 @@ public class Queue {
         return queue.getFirst();
     }
 
+    // mengecek apakah queue kosong
     public boolean isEmpty() {
         return queue.isEmpty();
     }
 
+    // mendapatkan ukuran queue
     public int size() {
         return queue.size();
     }
 
+    // menghapus semua lagu dari queue
     public void clear() {
         queue.clear();
         System.out.println("Queue cleared");
     }
 
+    // menampilkan semua lagu dalam queue
     public void displayQueue() {
         if (isEmpty()) {
             System.out.println("Your queue is empty");
             return;
         }
-
+        
         int i = 1;
         for (Song song : queue) {
             System.out.println(i + ". ");
