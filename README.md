@@ -6,10 +6,10 @@ Tema 2: Hierarchical Management and Linear Data Flow Systems
 ---
 
 ## Anggota Kelompok
-
- [Briellyan Sekartaji] [L0125006] 
- [M. Afan Rifqi Hanifa] [L0135086] 
- [Pandu Jatu Pradityo] [L0125111] 
+| [Nama] | [NIM] |
+| [Briellyan Sekartaji] | [L0125006] |
+| [M. Afan Rifqi Hanifa] | [L0135086] | 
+| [Pandu Jatu Pradityo] | [L0125111] |
 
 ---
 
