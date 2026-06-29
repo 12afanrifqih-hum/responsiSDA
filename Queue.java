@@ -8,13 +8,13 @@ public class Queue {
         this.queue = new LinkedList<>();
     }
 
-    // menambahkan lagu ke queue
+    // menambahkan lagu ke queue, kompleksitas O(1) 
     public void enqueue(Song song) {
         queue.addLast(song);
         System.out.println("'" + song.getTitle() + "' added to queue");
     }
 
-    // mengambil lagu dari queue terdepan 
+    // mengambil lagu dari queue terdepan, kompleksitas O(1)
     public Song dequeue() {
         if (isEmpty()) {
             System.out.println("Your queue is empty");
@@ -24,12 +24,12 @@ public class Queue {
         return removedSong;
     }
 
-    // menambahkan lagu di awal queue
+    // menambahkan lagu di awal queue, kompleksitas O(1)
     public void addFirst(Song song) {
         queue.addFirst(song);
     }
 
-    // melihat lagu di awal queue tanpa menghapusnya
+    // melihat lagu di awal queue tanpa menghapusnya, kompleksitas O(1)
     public Song peek() {
         if (isEmpty()) {
             System.out.println("Your queue is empty");
@@ -48,7 +48,7 @@ public class Queue {
         return queue.size();
     }
 
-    // menampilkan semua lagu dalam queue
+    // menampilkan semua lagu dalam queue, kompleksitas O(n)
     public void displayQueue() {
         if (isEmpty()) {
             System.out.println("Your queue is empty");
