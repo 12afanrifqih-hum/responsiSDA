@@ -48,12 +48,6 @@ public class Queue {
         return queue.size();
     }
 
-    // menghapus semua lagu dari queue
-    public void clear() {
-        queue.clear();
-        System.out.println("Queue cleared");
-    }
-
     // menampilkan semua lagu dalam queue
     public void displayQueue() {
         if (isEmpty()) {
